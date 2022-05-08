@@ -1,0 +1,564 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS PARA EL INDEX - PAGINA PRINCIPAL */
+
+h1 {
+    justify-content: center;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 1px;
+    margin-bottom: 20px;
+}
+
+body {
+    background: black;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.contenedor {
+    width: 90%;
+    margin: auto;
+}
+
+.nav-main {
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+}
+
+.nav-brand {
+    width: 105px;
+}
+
+.nav-main ul {
+    display: flex;
+}
+
+.nav-main ul li {
+    padding: 30px;
+}
+
+.nav-main ul.nav-menu {
+    flex: 1;
+    margin-left: 40px;
+}
+
+.nav-main ul li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.nav-main ul li a {
+    padding: 2px;
+}
+
+.showcase {
+    width: 100%;
+    height: 550px;
+    background: url("img/Votando.jpg") no-repeat center center/cover;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.boton {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: black;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #fff;
+    margin: 10px 0;
+}
+
+.boton:hover {
+    opacity: .7;
+}
+
+.showcase h2,
+.showcase p {
+    margin-bottom: 10px;
+}
+
+hr {
+    margin: 10px 0;
+}
+
+.noticias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin: 10px 0;
+}
+
+.noticias img {
+    width: 100%;
+    height: 300px;
+}
+
+.noticias h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.noticias a {
+    padding: 10px 0;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.noticias a:hover {
+    text-decoration: underline;
+}
+
+.noticias_video {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin: 10px 0;
+}
+
+.noticias_video iframe {
+    width: 100%;
+    height: 350px;
+}
+
+.noticias_video h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.noticias_video a {
+    padding: 10px 0;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.noticias_video a:hover {
+    text-decoration: underline;
+}
+
+.contenedor_video {
+    width: 90%;
+    margin: auto;
+}
+
+.contenedor_marcas {
+    width: 90%;
+    margin: auto;
+}
+
+.marcas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 10px 0;
+}
+
+.marcas img {
+    width: 100%;
+    height: 300px;
+}
+
+.social {
+    margin: 50px;
+}
+
+.social p {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    margin: 0 30px;
+}
+
+.links a i {
+    font-size: 3rem;
+}
+
+/* CSS PARA CALENDARIO */
+
+.root {
+    min-height: 100vh;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendario {
+    padding: 20px 10px;
+    background-color: black;
+    border-radius: 3px;
+    width: 100%;
+    max-width: 300px;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+.calendario_header {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.calendario .control_anterior {
+    color: #fff;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.calendario .control_siguiente {
+    color: #fff;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.grid_header, .grid_body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.grid_header {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.grid_body {
+    grid-auto-rows: 40px;
+    color: #fff;
+}
+
+.grid_cell_dia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid_cell_num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.grid_cell_selecionado {
+    color: rgb(6, 41, 156);
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 0 2px black inset;
+}
+
+.grid_cell_desabilitado {
+    color: gray;
+    cursor: not-allowed;
+}
+
+/* CSS PARA LOS PARTIDOS POLITICOS */
+
+.gallery {
+    width: 85%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 133px);
+    grid-auto-rows: 200px;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-item {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    grid-column: span 2;
+    height: 283px;
+    transition: 0.5s filter;
+}
+
+.gallery-item:first-of-type {
+    grid-column: 2 / span 2;
+}
+
+.gallery-item:hover {
+    filter: brightness(0.3);
+}
+
+.tittle {
+    text-align: center;
+    padding: 2.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-decoration: underline;
+    text-decoration-color: azure;
+    font-size: 2.4rem;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+.gallery-item:nth-of-type(8) {
+    grid-column: 2 / span 2;
+}
+
+/* CSS PAGINAS EXTRA */
+
+.showcase_liberal {
+    width: 100%;
+    height: 550px;
+    background: url("img/Liberal.png") no-repeat center center/cover;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.contenedor_partidos {
+    width: 90%;
+    margin: auto;
+}
+
+.contenedor_partidos h2 {
+    color: black;
+    font-size: 50px;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+.contenedor_partidos p {
+    color: black;
+    font-size: 30px;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+.candidatos {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: black;
+    color: #fff;
+    font-size: 30px;
+    border: 1px solid #fff;
+    margin: 10px 0;
+}
+
+.candidatos:hover {
+    text-decoration: underline;
+}
+
+.candidatos {
+    display: flex;
+    margin: 80px;
+    padding: 30px;
+    text-align: center;
+}
+
+.propuestas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 10px 0;
+}
+
+.propuestas img {
+    width: 100%;
+    height: 300px;
+}
+
+.propuestas h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.propuestas a {
+    padding: 10px 0;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.propuestas a:hover {
+    text-decoration: underline;
+}
+
+.propuestas {
+  width: 90%;
+  margin: auto;
+}
+
+.showcase_radical {
+    width: 100%;
+    height: 550px;
+    background: url("img/Cambio.jpg") no-repeat center center/cover;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.showcase_conservador {
+    width: 100%;
+    height: 550px;
+    background: url("img/Conservador.png") no-repeat center center/cover;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.showcase_democratico {
+    width: 100%;
+    height: 550px;
+    background: url("img/Centro.jpg") no-repeat center center/cover;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.showcase_democratico {
+    width: 100%;
+    height: 550px;
+    background: url("img/Centro.jpg") no-repeat center center/cover;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.showcase_U {
+    width: 100%;
+    height: 550px;
+    background: url("img/U_fondo.jpg") no-repeat center center/cover;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.showcase_polo {
+    width: 100%;
+    height: 550px;
+    background: url("img/Polo.jpg") no-repeat center center/cover;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.showcase_verde {
+    width: 100%;
+    height: 550px;
+    background: url("img/Verde.jpg") no-repeat center center/cover;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.showcase_asi {
+    width: 100%;
+    height: 550px;
+    background: url("img/asi.jpg") no-repeat center center/cover;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.showcase_mira {
+    width: 100%;
+    height: 550px;
+    background: url("img/Mira.jpg") no-repeat center center/cover;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.showcase_opcion {
+    width: 100%;
+    height: 550px;
+    background: url("img/Opcion_Ciudadana.jpg") no-repeat center center/cover;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}

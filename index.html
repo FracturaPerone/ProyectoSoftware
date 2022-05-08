@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Botes Tu Voto</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JS -->
+    <script src="main.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Fuente De Letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Smooch+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="contenedor">
+        <nav class="nav-main">
+            <img src="img/Vota.png" alt="NoBotesTuVoto" class="nav-brand">
+            <ul class="nav-menu">
+
+                <li>
+                    <a href="index.html">No Botes Tu Voto</a>
+                </li>
+
+                <li>
+                    <a href="partidos.html">Partidos</a>
+                </li>
+
+                <li>
+                    <a href="consultas.html">Consultas</a>
+                </li>
+
+                <li>
+                    <a href="votar.html">¿Cómo Votar?</a>
+                </li>
+
+            </ul>
+
+            <ul class="nav-menu-derecha">
+                <li>
+                    <a href="">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <hr>
+
+        <header class="showcase">
+            <h2> No Botes Tu Voto </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolorem veniam culpa tempore aspernatur beatae!</p>
+            <a href="" class="boton"> Leer Más <i class="fas fa-angle-double-right"></i> </a>
+        </header>
+
+        <div class="noticias">
+
+            <div>
+
+                <img src="img/Limite.png" alt="Noticia 1">
+                <h3> Fechas Límites </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla incidunt cupiditate accusamus dolor. Officiis, omnis?</p>
+                <a href=""> Leer Más <i class="fas fa-angle-double-right"></i></a>
+
+            </div>
+
+            <div>
+
+                <img src="img/Delito.jpg" alt="Noticia 1">
+                <h3> Delitos Electorales </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla incidunt cupiditate accusamus dolor. Officiis, omnis?</p>
+                <a href=""> Leer Más <i class="fas fa-angle-double-right"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <br><br>
+    <h1> ¡Fecha Limite De Votación! </h1>
+
+
+    <div class="root">
+        <div class="calendario" id="calendario">
+            <div class="calendario_header">
+
+                <button type="button" class="control_anterior"> < </button>
+
+                <span class="nombre-mes"> Marzo 2022 </span>
+
+                <button type="button" class="control_siguiente"> > </button>
+
+            </div>
+
+            <div class="calendario_body">
+                <div class="grid">
+
+                    <div class="grid_header">
+
+                        <span class="grid_cell_dia"> Dom </span>
+                        <span class="grid_cell_dia"> Lun </span>
+                        <span class="grid_cell_dia"> Mar </span>
+                        <span class="grid_cell_dia"> Mie </span>
+                        <span class="grid_cell_dia"> Jue </span>
+                        <span class="grid_cell_dia"> Vie </span>
+                        <span class="grid_cell_dia"> Sab </span>
+
+                    </div>
+
+                    <div class="grid_body">
+
+                        <span class="grid_cell_num grid_cell_desabilitado">27</span>
+                        <span class="grid_cell_num grid_cell_desabilitado">28</span>
+                        <span class="grid_cell_num">1</span>
+                        <span class="grid_cell_num">2</span>
+                        <span class="grid_cell_num">3</span>
+                        <span class="grid_cell_num">4</span>
+                        <span class="grid_cell_num">5</span>
+                        <span class="grid_cell_num">6</span>
+                        <span class="grid_cell_num">7</span>
+                        <span class="grid_cell_num">8</span>
+                        <span class="grid_cell_num">9</span>
+                        <span class="grid_cell_num">10</span>
+                        <span class="grid_cell_num">11</span>
+                        <span class="grid_cell_num">12</span>
+                        <span class="grid_cell_num">13</span>
+                        <span class="grid_cell_num">14</span>
+                        <span class="grid_cell_num">15</span>
+                        <span class="grid_cell_num">16</span>
+                        <span class="grid_cell_num">17</span>
+                        <span class="grid_cell_num">18</span>
+                        <span class="grid_cell_num">19</span>
+                        <span class="grid_cell_num">20</span>
+                        <span class="grid_cell_num">21</span>
+                        <span class="grid_cell_num">22</span>
+                        <span class="grid_cell_num">23</span>
+                        <span class="grid_cell_num">24</span>
+                        <span class="grid_cell_num">25</span>
+                        <span class="grid_cell_num">26</span>
+                        <span class="grid_cell_num grid_cell_selecionado">27</span>
+                        <span class="grid_cell_num">28</span>
+                        <span class="grid_cell_num">29</span>
+                        <span class="grid_cell_num">30</span>
+                        <span class="grid_cell_num">31</span>
+                        <span class="grid_cell_num grid_cell_desabilitado">1</span>
+                        <span class="grid_cell_num grid_cell_desabilitado">2</span>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <h1> ENTERATE DE LOS DEBATES MÁS RECIENTES </h1>
+    <div class="contenedor_video">
+        <div class="noticias_video">
+
+            <div>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tmDX_5D-AlA?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3> “Cínico, mentiroso, farsante”: Rodolfo y Fico se tiran rayos en el cara a cara | Elecciones 2022 </h3>
+                <p>“No había visto más cínico que el doctor Gutiérrez (…) mentiroso, farsante”: Rodolfo y Fico se tiran rayos en el cara a cara.</p>
+                <a href="https://www.semana.com" target="_blank"> Leer Más <i class="fas fa-angle-double-right"></i></a>
+
+             </div>
+
+            <div>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KJMrZ3Dxccw?start=11" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             <h3> “Primero nos abrazas y luego somos despreciables”: Fico a Rodolfo Hernández | Elecciones 2022 </h3>
+             <p>“Yo te hago una pregunta, ¿de nosotros cinco quién es el que tiene una audiencia en la Fiscalía por corrupción? Sos vos”: Federico Gutiérrez a Rodolfo Hernández.</p>
+             <a href="https://www.semana.com/semana-tv/semana-el-debate/articulo/empleo-el-primer-gran-tema-del-segundo-gran-debate-en-semana-entre-pesos-pesados-que-buscan-la-presidencia-de-colombia/202148/" target="_blank"> Leer Más <i class="fas fa-angle-double-right"></i></a>
+
+             </div>
+
+            <div>
+
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/wcT1CQSGPyI?start=11" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             <h3> Gustavo Petro: "Si compara Medellín con Bogotá pierde, Federico" | El Tiempo </h3>
+              <p>Por primera vez ya como candidatos presidenciales para el 2022 - 2026 se encuentran Gustavo Petro y Federico Gutiérrez, Ingrid Betancourt. Alianza EL TIEMPO y Semana.</p>
+             <a href="https://www.eltiempo.com" target="_blank"> Leer Más <i class="fas fa-angle-double-right"></i></a>
+
+             </div>
+
+            <div>
+
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/Wf0LL8UNV8s?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             <h3> Federico Gutiérrez le apuntó a Gustavo Petro con el tema de la expropiación | Elecciones 2022 </h3>
+             <p>La polémica en torno al tema de la expropiación generó un enérgico debate entre Federico Gutiérrez y Gustavo Petro. Vea cómo fue el contrapunteo.</p>
+             <a href="https://www.semana.com" target="_blank"> Leer Más <i class="fas fa-angle-double-right"></i></a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <br> <br>
+    <div class="contenedor_marcas">
+
+    <div class="marcas">
+
+        <div>
+
+            <img src="img/Registraduria.png" alt="Marca 1">
+
+        </div>
+
+        <div>
+
+            <img src="img/Procuraduria.png" alt="Marca 1">
+
+        </div>
+
+        <div>
+
+            <img src="img/Fiscalia.png" alt="Marca 1">
+
+        </div>
+
+        <div>
+
+            <img src="img/Contraloria.png" alt="Marca 1">
+
+        </div>
+
+    </div>
+
+    <section class="social">
+        <p> ¡Síguenos En Las Redes Sociales! </p>
+        <div class="links">
+
+            <a href="">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a href="">
+                <i class="fab fa-twitter"></i>
+            </a>
+
+            <a href="">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+
+            <a href="">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+        </div>
+    </section>
+
+    
+</body>
+</html>
